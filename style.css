@@ -1,0 +1,35 @@
+body{
+  background-color: 	#ffffff;
+  margin: 0% 15%;
+  font-family: 'inter';
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+body.dark-mode{
+  background-color: #212121;
+  color: #ffffff;
+}
+
+header div{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-wrap  
+  gap: 12px;              
+  margin: 20px;           
+  justify-content: center;
+}
+header button{
+   background-color: transparent;
+  border: none;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+header button:hover{
+  background-color: #f5f7fa;
+}
