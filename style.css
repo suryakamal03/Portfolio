@@ -168,4 +168,11 @@ body.dark-mode .scrollBtn {
 body.dark-mode .scrollBtn:hover {
   color: #fff;
 }
-
+.p span:hover{
+  background-color: black;
+  color: white;
+}
+body.dark-mode .p span:hover{
+  background-color: #ffffff;
+  color: black;
+}

@@ -9,17 +9,34 @@ function init(){
       icon.classList.replace('bi-sun-fill', 'bi-moon-fill');
     }
   }
-  const cv = document.querySelector('.cv');
-const overlay = document.querySelector('.overlay');
-const closeCv = document.querySelector('.close-cv');
-
-cv.addEventListener('click', () => {
-  overlay.classList.remove('hidden');
-});
-
-closeCv.addEventListener('click', () => {
-  overlay.classList.add('hidden');
-});
-
+  // button 
+  const homebtn = document.querySelector('.homebtn')
+  homebtn.addEventListener('click',()=>{
+     window.scrollTo({ top: 0, behavior: 'smooth' });
+  })
+  const aboutbtn = document.querySelector('.aboutbtn');
+  const aboutme = document.querySelector('.aboutme')
+  aboutbtn.addEventListener('click',()=>{
+    aboutme.scrollIntoView({behavior:'smooth'})
+  })
+  const skillbtn = document.querySelector('.skillbtn');
+  const skills = document.querySelector('.skills');
+  skillbtn.addEventListener('click',()=>{
+    skills.scrollIntoView({behavior:'smooth'})
+  })
+  const projectbtn = document.querySelector('.projectbtn');
+  const Projects = document.querySelector('.Projects');
+  projectbtn.addEventListener('click',()=>{
+    Projects.scrollIntoView({behavior:'smooth'});
+  })
+  const Contactbtn = document.querySelector('.Contactbtn');
+  const reachme = document.querySelector('.reachme');
+  Contactbtn.addEventListener('click',()=>{
+    reachme.scrollIntoView({behavior:'smooth'});
+  })
+ 
 }
+ function scrollToTop(){
+    window.scrollTo({top: 0,behavior:'smooth'})
+  }
 init();
