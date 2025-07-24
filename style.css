@@ -179,3 +179,53 @@ body.dark-mode .p span:hover{
   background-color: #ffffff;
   color: black;
 }
+
+/* 
+Mobile
+ */
+ /* --- Add this code to the bottom of your CSS file --- */
+
+@media (max-width: 768px) {
+
+  /* 1. Body Layout */
+  body {
+    /* Reduce side margins to give content more space on small screens */
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  /* 2. Header Cleanup */
+  header {
+    /* Stack all header items vertically and center them */
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Reset the container for CV/GitHub to fix positioning */
+  .re {
+    position: static; /* Remove the container's positioning context */
+    order: 3; /* Move these links below the main navigation */
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  /* This is the key fix: reset the absolutely positioned CV and GitHub links */
+  .re .cv, .re button {
+    position: static; /* Let the links sit naturally in their container */
+  }
+
+  .nav {
+    order: 2; /* Put main navigation above the CV/GitHub links */
+    flex-wrap: wrap; /* Allow nav buttons to wrap onto the next line if needed */
+    justify-content: center;
+  }
+
+  /* 3. About Me Section */
+  .me {
+    /* Stack your photo on top of your description text */
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align the text for a cleaner look */
+  }
+}
